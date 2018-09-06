@@ -14,3 +14,9 @@ def monkey_trouble(a_smile, b_smile):
     return True
   else :
     return False
+
+def sum_double(a, b):
+  if a==b :
+    return (a+b+a+b)
+  else :
+    return (a+b)
