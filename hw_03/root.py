@@ -12,7 +12,7 @@ def roots(x):
             steps = steps +1 
         else:
             return "this took " + str(float(steps))+ " guesses"
-print (roots(20))
+print (roots(30))
     
     
     
