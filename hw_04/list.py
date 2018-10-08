@@ -79,4 +79,4 @@ print (locate(l, value))
 print (count(l,value))
 print(reverse(l))
 print (isIncreasing(l))
-print (palindrome(l))
+print (palindrome(l))received help form Stacey Li's repo
