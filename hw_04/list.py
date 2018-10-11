@@ -25,19 +25,26 @@ print (value)
 
 def locate(l, value):
     ind =  0
-    if value not in(l):
+    if value not in(l): #find a way to code this out 
         return -1
-    for i in l:
-        if i == value :
+    i = 0
+    while i < len(l):
+        if l[i] == value :
             return i , ind
         else:
             i= i+1
             ind = ind+1
+#l.index is a more efficient way to pull this off
+#if i in l -  this isnt always efficient because the program must go through all
+#numbers in  and if there are a lot of numbers it may take forever to go through
+#the whole thing. The broken down function that doesnt use the index function
+#starts at the begining but breaks when it is found
 
 def count(l,value):
     num= 0
-    for i in l:
-        if i == value:
+    i= 0
+    while i < len(l):
+        if l[i] == value:
             num = num+1
         i = i+1
     return num       
@@ -49,6 +56,7 @@ def reverse(l):
         lnew.append(l[index])
         index -= 1
     return lnew
+#it is an option to create a new list and append the first item to the new list and prepend the rest of the list items
 
 def isIncreasing(l):
     x=0
@@ -70,13 +78,16 @@ def palindrome(l):
     palind = True
     if l[begin] == l[end]:
         begin += 1
-        end += 1
+        end -= 1
     else:
         palind = False
     return palind
+#couldve done if l = reverse of l
+#this is easier but not always as efficient
 
 print (locate(l, value))
 print (count(l,value))
 print(reverse(l))
 print (isIncreasing(l))
-print (palindrome(l))received help form Stacey Li's repo
+print (palindrome(l))
+'''received help form Stacey Li's repo'''
