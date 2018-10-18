@@ -25,13 +25,10 @@ def filterodd(l):
     for i in range(len(l)):
         if l[i] % 2 != 0:
             newl.append(l[i])
-            i=i+1
-        else:
-            i = i+1
     return newl
 print(filterodd(l))
 
-def mapsquare(l):
+def mapsquare(l):   #mapping is taking one set of functions and relating it to another set of functions
     squared = []
     for i in l:
         squared.append(i ** 2)
