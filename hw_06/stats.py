@@ -18,20 +18,21 @@ def max(list):
 
     return greatest , spot
 def freq(list,val):
-    frequency = []
+    frequency = 0
     for num in list:
         if num == val:
-            frequency.append(num)
-    return len(frequency)
+            frequency = frequency +1
+    return (frequency)
 
 def mode(list):
+    greatest_val = list[0]
     greatest = freq(list,list[0])
     for val in list:
         if freq(list, val) >= greatest:
             greatest = freq(list, val)
+            greatest_val = val
          
-    return greatest , list [val]
-
+    return greatest , greatest_val
 
 
 
