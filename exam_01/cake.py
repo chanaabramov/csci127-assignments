@@ -6,3 +6,4 @@ print (int(div(5,10,1)))
 print (int((div(3,1,15))))
 print (int(div(1,5,20)))
 
+

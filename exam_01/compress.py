@@ -1,14 +1,13 @@
 vowels = "aeiou"
-i = 1
 
 def compress_word(w):
-    word = w[1:]
+    rest = w[1:]
+    first = w[0]
     new_word =  ""
-    new_word = new_word + w[0]
-    for i in range((len(word))):
-        if word[i] not in  vowels:
-            new_word = new_word + word[i]
-            i = i + 1
+    new_word = new_word + first
+    for i in rest:
+        if i not in  vowels:
+            new_word = new_word + i
     return new_word
             
 print (compress_word("apple"))
