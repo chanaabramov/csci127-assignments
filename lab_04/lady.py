@@ -1,32 +1,50 @@
-def lady(string):
-    n  = len(string) 
-    spaces =  (list(string))
-    print(spaces)
-    alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    
-    for i in range(0, n-1):
-        if spaces[i] == spaces[ i+1] or spaces[i] == spaces[ i-1]:
-            happy = True
-        else:
-            space = spaces.index("_")
-            temp = spaces[space]
-            spaces[space] = spaces[i]
-            spaces[i] = temp
-            print(spaces)
-            for i in range(0, len(spaces)-1):
-                if spaces[i] == spaces[ i+1] or spaces[i] == spaces[ i-1]:
-                    happy = True
-                else:
-                    happy = False
-        
-    under = []
-    for i in range(0,n-1):
-        if spaces[i] == "_":
-            under.append(spaces.index(i))
+b = "RR_YBY_Y"
+b = "RB_BY_YY"
+newb= list(b)
+countlist = [] 
+empty_list = []
 
-            
-print(lady("X_Y__Z"))
-print(lady("RBY_BYR"))
-        
+def sort(b):
+    val = "_"
+    for item in (newb):
+        if item == "_":
+            empty_list.append(item)
+    while val in newb:
+        newb.remove(val)
+    newb2 = sorted(newb)
+    return newb2
+
+newb2 = sort(b)
+print(newb2)
+
+def freq2(l,item):
+    count = 0
+    for i in range(len(l)):
+        if l[i] == item:
+            count = count + 1
+    return count
+
+
+def conditions(b):
+    if len(empty_list) >= 1:
+        for i in range (len(newb2)):
+            count = freq2(newb2, newb2[i])
+            print(count)
+            if count >= 2:
+                happy= True
+                print(happy)
+            else:
+                happy = False
+                print (happy)
+                break 
+
+
+
+print(sort("RR_YBY_Y"))
+print(conditions(newb2))
+
+
+
+
 
         
