@@ -30,5 +30,6 @@ def countApplesandOranges(s,t,a,b):
     print(len(fad), "apples fell")
     print (count , "apples fell on the house") 
     print (count2 , "oranges fell on the house")
+print(countApplesandOranges(3,6,-1,7))
 
     
