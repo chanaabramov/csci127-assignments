@@ -1,5 +1,10 @@
-b = "RR_YBY_Y"
-b = "RB_BY_YY"
+
+testcases = ["RB_BY_YY", "XY_XY"]
+
+for test in testcases:
+    b = test
+    
+
 newb= list(b)
 countlist = [] 
 empty_list = []
@@ -29,19 +34,19 @@ def conditions(b):
     if len(empty_list) >= 1:
         for i in range (len(newb2)):
             count = freq2(newb2, newb2[i])
-            print(count)
             if count >= 2:
                 happy= True
-                print(happy)
             else:
                 happy = False
-                print (happy)
-                break 
+                break
+        return happy
+for test in testcases:
+    print(test)
+    print(conditions(b))
 
 
 
-print(sort("RR_YBY_Y"))
-print(conditions(newb2))
+
 
 
 
