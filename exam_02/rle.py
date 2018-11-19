@@ -9,5 +9,5 @@ def encode(s):
     return(d)
 print(encode('abbaaccddee'))
 
-def decode(list):
+##def decode(list):
     
