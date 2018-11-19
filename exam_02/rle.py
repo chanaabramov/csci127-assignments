@@ -8,3 +8,6 @@ def encode(s):
             d[s[i]] = 1
     return(d)
 print(encode('abbaaccddee'))
+
+def decode(list):
+    
