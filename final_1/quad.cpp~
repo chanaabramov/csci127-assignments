@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+double quad(int a; int b; int c){
+  int quadr;
+  b = b*b;
+  quadr = b-4(a*c);
+  return quadr;
+}
+
+int main(){
+  cout<< quad(3,4,5);
+  return 0;
+  
+
+
+
+}
