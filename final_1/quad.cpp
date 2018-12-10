@@ -26,6 +26,7 @@ double quadsolve( int a, int b , int c){
 
 int main(){
   cout<< quad(3,4,5)<< "\n";
+  cout<< quad(1,4,2)<< "\n";
   cout<< quadsolve(1,4,2)<< "\n";
 			  
   return 0;

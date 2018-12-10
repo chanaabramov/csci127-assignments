@@ -17,9 +17,7 @@ double sumofsquares( int a, int b){
 }
 int main(){
   cout<< sumofsquares(2,4)<< "\n";
-  cout<< sumofsquares(5,6)<< "\n";
+  cout<< sumofsquares(5,10)<< "\n";
   cout<< sumofsquares(10,20)<< "\n";
-  cout<< sumofsquares(4,8)<< "\n";
   return 0;
-
 }
