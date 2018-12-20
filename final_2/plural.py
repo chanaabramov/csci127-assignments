@@ -15,7 +15,8 @@ def notPossesive(line):
     return pluralCount
 
 
-print(notPossesive("couches in houses with doors and windows"))
-print(notPossesive("tests test's houses house's"))
+
 print(countPlurals("couches in houses with doors and windows"))
 print(countPlurals("theses wills alls bes considereds plurals becauses theys alls ends withs thes letters s"))
+print(notPossesive("couches in houses with doors and windows"))
+print(notPossesive("tests test's houses house's"))

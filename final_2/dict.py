@@ -17,7 +17,7 @@ def spellcheck(d,word):
     lower_word = ""
     lower_word =  word.lower()
     #print(lower_word)
-    print(d[lower_word[0]])
+##    print(d[lower_word[0]])
     words = (d[lower_word[0]]).split()
     for vals in words:
         if vals == word:
@@ -26,13 +26,15 @@ def spellcheck(d,word):
   
     
            
-print(addline({},"couches chana cat in houses with doors and windows"))
+d = (addline({},"couches chana cat in houses with doors and windows"))
 
-print("______________________")
-print(addline(d,"I a extremely tired but i have shit to do"))
-print("______________________")
-print(addline(d,"I need to visit my grandmother and do my laundry"))
-print("______________________")
+
+d = (addline(d,"I a extremely tired but i have shit to do"))
+
+d = (addline(d,"I need to visit my grandmother and do my laundry"))
+
+d = (addline(d,"and go shopping and help out at a soup kitchen"))
+print(addline(d,"it's a never ending list"))
 print(spellcheck(d, 'cat'))
 print(spellcheck(d, 'hulabaloo'))
 print(spellcheck(d, 'tired'))
